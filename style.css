@@ -14,9 +14,10 @@ h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 }
 /* Containers*/
+
 .container {
 	width: 100%;
-	max-width: 1170px;
+	max-width: 1120px;
 	margin: 0 auto;
 }
 .container--header {
@@ -30,9 +31,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .container--services {
 	width: 100%;
+	padding: 100px 0;
 }
 
 /* Header */
+
 .header {
 	position: absolute;
 	top: 0;
@@ -42,8 +45,6 @@ h1, h2, h3, h4, h5, h6, p {
 	height: 100px;
 	border-bottom: 1px solid rgba(161, 161, 161, 0.5);
 }
-
-/* Nav */
 .nav {
 	display: flex;
 	font-size: 16px;
@@ -64,6 +65,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* First-screen */
+
 .first-screen {
 	display: flex;
 	flex-direction: column;
@@ -94,6 +96,9 @@ h1, h2, h3, h4, h5, h6, p {
 	text-transform: uppercase;
 	margin-bottom: 50px;
 }
+
+/* Buttons*/
+
 .btn {
     display: inline-block;
     vertical-align: top;
@@ -112,3 +117,68 @@ h1, h2, h3, h4, h5, h6, p {
 .btn--blue {
     background-color: #4985FF;
 }
+
+/* Services*/
+
+.services {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	background-color: #fff;
+}
+.services__text {
+	width: 100%;
+	max-width: 755px;
+	margin: 0 auto;
+}
+.services__text_title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 53px;
+	text-align: center;
+	color: #323232;
+	margin-bottom: 50px;
+}
+.services__text_subtitle {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25px;
+	text-align: center;
+	color: #999999;
+	margin-bottom: 70px;
+}
+.services__items, .services__items_content {
+	display: flex;
+	justify-content: space-between;
+}
+.services__items_content-first-elipse {
+	border-radius: 100%;
+	border: 1px solid #E0E0E0;
+	padding: 10px;
+}
+.services__items_content-second-elipse {
+	border-radius: 100%;
+	border: 1px solid #4985FF;
+	padding: 25px;
+}
+.services__items_content-text {
+	margin: 0 20px 55px;
+	text-align: left;
+	transform: translateY(35%);
+}
+.services__items_content-text-title {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #000000;
+	margin-bottom: 15px;
+}
+.services__items_content-text-subtitle {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 22px;
+	color: #999999;
+	margin-bottom: 55px;
+}
+
