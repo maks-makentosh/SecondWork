@@ -22,13 +22,14 @@ h1, h2, h3, h4, h5, h6, p {
 .container--header {
 	display: flex;
 	justify-content: flex-end;
-	padding: 40px 0;
 	align-items: center;
 }
 .container--first-screen {
 	max-width: 900px; 
 	width: 100%;
-	margin: 0 auto;
+}
+.container--services {
+	width: 100%;
 }
 
 /* Header */
@@ -51,7 +52,12 @@ h1, h2, h3, h4, h5, h6, p {
 .nav__link {
  	color: #FFF;
  	text-decoration: none;
- 	margin-left: 40px;
+	margin-left: 40px;
+	padding: 40px 0;
+}
+.nav__link:hover {
+	border-bottom: 2px solid #FFF;
+	transition: 1 linear;
 }
 .nav__link:first-child {
 	margin-left: 0px;
