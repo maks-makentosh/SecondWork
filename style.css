@@ -13,6 +13,25 @@ body {
 h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 }
+/* Text styles */
+
+.title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 53px;
+	text-align: center;
+	color: #323232;
+	margin-bottom: 50px;
+}
+.subtitle {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25px;
+	text-align: center;
+	color: #999999;
+	margin-bottom: 70px;
+}
+
 /* Containers*/
 
 .container {
@@ -20,16 +39,20 @@ h1, h2, h3, h4, h5, h6, p {
 	max-width: 1120px;
 	margin: 0 auto;
 }
-.container--header {
+.container_header {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
-.container--first-screen {
+.container_first-screen {
 	max-width: 900px; 
 	width: 100%;
 }
-.container--services {
+.container_services {
+	width: 100%;
+	padding: 100px 0;
+}
+.container_about-us {
 	width: 100%;
 	padding: 100px 0;
 }
@@ -114,7 +137,7 @@ h1, h2, h3, h4, h5, h6, p {
 	box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
 	color: #FFF;
 }
-.btn--blue {
+.btn_blue {
     background-color: #4985FF;
 }
 
@@ -132,53 +155,47 @@ h1, h2, h3, h4, h5, h6, p {
 	max-width: 755px;
 	margin: 0 auto;
 }
-.services__text_title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 53px;
-	text-align: center;
-	color: #323232;
-	margin-bottom: 50px;
-}
-.services__text_subtitle {
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 25px;
-	text-align: center;
-	color: #999999;
-	margin-bottom: 70px;
-}
-.services__items, .services__items_content {
+.services__items, .service {
 	display: flex;
 	justify-content: space-between;
 }
-.services__items_content-first-elipse {
+.service__content-firstwrap{
 	border-radius: 100%;
 	border: 1px solid #E0E0E0;
 	padding: 10px;
 }
-.services__items_content-second-elipse {
+.service__content-secondwrap {
 	border-radius: 100%;
 	border: 1px solid #4985FF;
 	padding: 25px;
 }
-.services__items_content-text {
+.services__content-text {
 	margin: 0 20px 55px;
 	text-align: left;
 	transform: translateY(35%);
 }
-.services__items_content-text-title {
+.text-title {
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 22px;
 	color: #000000;
 	margin-bottom: 15px;
 }
-.services__items_content-text-subtitle {
+.text-subtitle {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 22px;
 	color: #999999;
 	margin-bottom: 55px;
 }
+
+/* About us */
+
+.about-us {
+	background-color:#F6F6F8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 
