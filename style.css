@@ -21,7 +21,6 @@ h1, h2, h3, h4, h5, h6, p {
 	line-height: 53px;
 	text-align: center;
 	color: #323232;
-	margin-bottom: 50px;
 }
 .subtitle {
 	font-size: 16px;
@@ -29,10 +28,9 @@ h1, h2, h3, h4, h5, h6, p {
 	line-height: 25px;
 	text-align: center;
 	color: #999999;
-	margin-bottom: 70px;
 }
 
-/* Containers*/
+/* Containers */
 
 .container {
 	width: 100%;
@@ -55,6 +53,8 @@ h1, h2, h3, h4, h5, h6, p {
 .container_about-us {
 	width: 100%;
 	padding: 100px 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 /* Header */
@@ -126,7 +126,8 @@ h1, h2, h3, h4, h5, h6, p {
     display: inline-block;
     vertical-align: top;
     text-decoration: none;
-    border: 0;
+	border: none;
+	outline: none;
     cursor: pointer;
     padding: 15px 35px;
 	font-weight: 500;
@@ -140,7 +141,15 @@ h1, h2, h3, h4, h5, h6, p {
 .btn_blue {
     background-color: #4985FF;
 }
-
+.btn-underlined {
+	text-decoration: underline;
+	padding: 0;
+	border-radius: 0;
+	font-weight: 500;
+	box-shadow: none;
+	color: #4985FF;
+	background-color: inherit;
+}
 /* Services*/
 
 .services {
@@ -154,6 +163,12 @@ h1, h2, h3, h4, h5, h6, p {
 	width: 100%;
 	max-width: 755px;
 	margin: 0 auto;
+}
+.services__text .title {
+	margin-bottom: 50px;
+}
+.services__text .subtitle {
+	margin-bottom: 70px;
 }
 .services__items, .service {
 	display: flex;
@@ -196,6 +211,36 @@ h1, h2, h3, h4, h5, h6, p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
+}
+.about-us__top-content {
+	display: flex;
+	padding-bottom: 90px;
+	border-bottom: 1px solid #E0E0E0;
+}
+.about__text{
+	display: flex;
+	text-align: left;
+	flex-wrap: wrap;
+	width: 50%;
+	margin-right: 60px;
+}
+.about__text .subtitle, .about__text .title  {
+	text-align: left;
+	margin-bottom: 40px;
+}
+.about__foto {
+	background: url(img/about-us/about-us_photo1.jpg) #C4C4C4;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 30px;
+	box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+	width: 50%;
+	margin-left: 60px;
+}
+.about-us__bottom-content {
+	
 }
 
 
