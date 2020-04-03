@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .text-subtitle {
 	font-size: 14px;
-	font-weight: 400;
+	font-weight: 500;
 	line-height: 22px;
 	color: #999999;
 }
@@ -95,7 +95,10 @@ h1, h2, h3, h4, h5, h6, p {
 	max-width: 500px;
 	padding: 85px 0;
 }
-
+.container__footer {
+	width: 100%;
+	padding-top: 70px;
+}
 
 /* Header */
 
@@ -415,6 +418,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .subscribe__content .text-subtitle__mini {
 	margin-top: 35px;
+	margin-bottom: 0;
 }
 .subscribe__form {
   	display: flex;
@@ -446,3 +450,44 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Footer */
+
+.footer {
+	text-align: left;
+	background-color: #F6F6F8;
+}
+.footer__content {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-bottom: 70px;
+	border-bottom: 1px solid #E0E0E0;
+}
+.footer__item {
+	display: flex;
+	flex-direction: column;
+}
+.footer__item a {
+	display: flex;
+	align-items: center;
+}
+
+.footer__item .text-title{
+	margin-bottom: 30px;
+}
+.footer__item .text-subtitle{
+	margin-bottom: 15px;
+	text-decoration: none;
+}
+.footer__bottom {
+	padding: 30px 0;
+}
+.footer__icon_next {
+	width: 10px;
+	fill: #999999;
+	margin-right: 15px;
+}
+.footer__icon_contact {
+	width: 15px;
+	fill: #999999;
+	margin-right: 15px;
+}
