@@ -69,6 +69,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .container_services {
 	width: 100%;
+	max-width: 60%;
 	padding: 100px 0;
 }
 .container_services .btn__blue {
@@ -128,6 +129,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .nav__link:first-child {
 	margin-left: 0px;
+}
+.nav__link:last-child {
+	margin-right: 40px;
 }
 
 /* First-screen */
@@ -194,12 +198,10 @@ h1, h2, h3, h4, h5, h6, p {
 	color: #4985FF;
 	background-color: inherit;
 }
+
 /* Services*/
 
 .services {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	text-align: center;
 	background-color: #fff;
 }
@@ -214,9 +216,14 @@ h1, h2, h3, h4, h5, h6, p {
 .services__text .subtitle {
 	margin-bottom: 70px;
 }
-.services__items, .service {
+.services__items {
 	display: flex;
-	justify-content: space-between;
+    justify-content: center;
+    margin: 0 auto;
+}
+.service {
+	display: flex;
+	justify-content: space-around;
 }
 .service__content-firstwrap{
 	border-radius: 100%;
@@ -229,10 +236,14 @@ h1, h2, h3, h4, h5, h6, p {
 	padding: 25px;
 }
 .services__content-text {
-	margin: 0 20px 55px;
+	padding: 0 25px 55px;
 	text-align: left;
 	transform: translateY(35%);
 }
+.services__content-text .text-title{
+	margin-bottom: 12px;
+}
+
 
 /* About us */
 
@@ -245,8 +256,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .about-us__top-content {
 	display: flex;
-	padding-bottom: 90px;
-	border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 90px;
+    border-bottom: 1px solid #E0E0E0;
+    margin: 0 auto;
 }
 .about__text{
 	display: flex;
@@ -311,9 +323,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .portfolio__content {
 	display: flex;
-	justify-content: space-around;
-	padding: 70px 0 85px;
-	border-bottom: 1px solid #E0E0E0;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 70px 0 85px;
+    border-bottom: 1px solid #E0E0E0;
+    width: 33.3333%;
 }
 .portfolio__item {
 	display: flex;
@@ -377,7 +391,8 @@ h1, h2, h3, h4, h5, h6, p {
 	background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url(img/video/video__bg.jpg);
 	background-color: #fff;
 	background-repeat: no-repeat;
-	background-size: contain;
+    background-size: cover;
+    background-position: center;
 	text-align: center;
 }
 .video-work__content {
@@ -490,4 +505,113 @@ h1, h2, h3, h4, h5, h6, p {
 	width: 15px;
 	fill: #999999;
 	margin-right: 15px;
+}
+
+/* Medias */
+
+@media (max-width: 1640px) {
+	.container_services {
+		padding: 65px 0;
+		max-width: 90%;
+	}
+	.service {
+    	flex-wrap: wrap;
+    }
+    .services__content-text {
+    	text-align: center;
+    	transform: none;
+    	margin-top: 25px;
+    }
+}
+@media (max-width: 1180px) {
+	.container__portfolio {
+		max-width: 85%;
+		padding: 65px 0;
+	}
+	.portfolio {
+		background-size: 100% 25%;
+	}
+	.portfolio__content {
+		width: 100%;
+		flex-wrap: wrap;
+		text-align: center;
+		padding: 70px 0 0;
+	}
+	.portfolio__item {
+		margin-right: 0;
+	}
+	.portfolio__img {
+	    margin-left: auto;
+    	margin-right: auto;
+    }
+    .portfolio__item .btn__underlined {
+    	text-align: center;
+    	margin-bottom: 30px;
+    }
+    .portfolio__item .text-subtitle {
+    	margin-bottom: 15px;
+    }
+}
+@media (max-width: 920px) {
+	.first-screen__title {
+    	font-size: 35px;
+    	margin-right: 20px;
+    	margin-left: 20px; 
+    }
+    .title {
+    	font-size: 30px;
+    	line-height: 45px;
+    }
+}
+@media (max-width: 780px) {
+	.portfolio__header {
+		flex-direction: column;
+	}
+	.portfolio__header .title {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+}
+@media (max-width: 650px) {
+	.nav {
+		display: none;
+	}
+	.first-screen {
+    	height: 800px;
+	}
+	.services__items {
+		flex-wrap: wrap;
+	}
+	.container_services .btn__blue {
+		margin-top: 15px;
+	}
+	.services__text .subtitle {
+    	margin-bottom: 50px;
+	}
+	.container_services {
+    	padding: 45px 0;
+    }
+    .services__text .title {
+    	margin-bottom: 40px;
+	}
+}
+@media (max-width: 420px) {
+	.first-screen__title {
+    	font-size: 25px;
+	}
+	.first-screen {
+    	height: 700px;
+	}
+	.title {
+    	font-size: 20px;
+    	line-height: 30px
+    }
+    .subtitle {
+    	font-size: 14px;
+    	line-height: 23px;
+    }
+    .portfolio__img {
+    	max-width: 300px;
+    }
+
 }
