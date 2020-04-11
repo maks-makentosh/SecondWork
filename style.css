@@ -177,7 +177,6 @@ h1, h2, h3, h4, h5, h6, p {
     display: none;
     width: inherit;
 }
-
 label {
     display: block;
     position: absolute;
@@ -202,7 +201,7 @@ label {
     border-right: 1px solid rgba(255,255,255,.3);
     border-left: 1px solid rgba(255,255,255,.3);
     background: #999999; 
-    opacity: 0.85;
+    opacity: 0.95;
 }
 .burger__content_item {
 	display: block;
